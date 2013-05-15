@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "pdMainViewCell.h"
 
-@interface pdViewController : UIViewController
+@interface pdViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@property (strong, nonatomic) IBOutlet UICollectionView *mainCollectV;
 
 @end

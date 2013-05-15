@@ -20,6 +20,7 @@
 		9D0A3910173C17BB007E9748 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D0A390E173C17BB007E9748 /* MainStoryboard_iPad.storyboard */; };
 		9D0A3913173C17BB007E9748 /* pdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0A3912173C17BB007E9748 /* pdViewController.m */; };
 		9D0A391A173C195A007E9748 /* photoDieryBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D0A3919173C195A007E9748 /* photoDieryBack.png */; };
+		9D61FA6D1743DEF8007A1B34 /* pdMainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D61FA6C1743DEF8007A1B34 /* pdMainViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,8 @@
 		9D0A3911173C17BB007E9748 /* pdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pdViewController.h; sourceTree = "<group>"; };
 		9D0A3912173C17BB007E9748 /* pdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pdViewController.m; sourceTree = "<group>"; };
 		9D0A3919173C195A007E9748 /* photoDieryBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photoDieryBack.png; sourceTree = "<group>"; };
+		9D61FA6B1743DEF8007A1B34 /* pdMainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pdMainViewCell.h; sourceTree = "<group>"; };
+		9D61FA6C1743DEF8007A1B34 /* pdMainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pdMainViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				9D0A3903173C17BB007E9748 /* pdAppDelegate.m */,
 				9D0A390B173C17BB007E9748 /* MainStoryboard_iPhone.storyboard */,
 				9D0A390E173C17BB007E9748 /* MainStoryboard_iPad.storyboard */,
+				9D61FA6B1743DEF8007A1B34 /* pdMainViewCell.h */,
+				9D61FA6C1743DEF8007A1B34 /* pdMainViewCell.m */,
 				9D0A3911173C17BB007E9748 /* pdViewController.h */,
 				9D0A3912173C17BB007E9748 /* pdViewController.m */,
 				9D0A38FA173C17BB007E9748 /* Supporting Files */,
@@ -185,6 +190,7 @@
 				9D0A3900173C17BB007E9748 /* main.m in Sources */,
 				9D0A3904173C17BB007E9748 /* pdAppDelegate.m in Sources */,
 				9D0A3913173C17BB007E9748 /* pdViewController.m in Sources */,
+				9D61FA6D1743DEF8007A1B34 /* pdMainViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +323,7 @@
 				9D0A3918173C17BB007E9748 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

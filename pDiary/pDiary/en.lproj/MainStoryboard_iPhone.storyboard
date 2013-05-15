@@ -8,35 +8,40 @@
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="pdViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Esv-cK-mbT">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="8ri-u6-6kA">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7R7-UI-fH5">
-                            <size key="itemSize" width="94" height="97"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="zl9-i7-LhO">
+                            <size key="itemSize" width="95" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="L1A-BB-saD">
-                                <rect key="frame" x="0.0" y="0.0" width="94" height="97"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="F1C-Dx-w6l" customClass="pdMainViewCell">
+                                <rect key="frame" x="0.0" y="3" width="95" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="94" height="97"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="95" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jau-r0-z5p">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf4-9Z-uGM">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="1" green="0.023529414087533951" blue="0.098039224743843079" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="0.90980398654937744" green="0.94117653369903564" blue="0.32156863808631897" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Jau-r0-z5p" firstAttribute="centerY" secondItem="L1A-BB-saD" secondAttribute="centerY" type="default" id="IEr-mh-bjb"/>
-                                    <constraint firstItem="Jau-r0-z5p" firstAttribute="centerX" secondItem="L1A-BB-saD" secondAttribute="centerX" type="default" id="u5B-69-BYU"/>
+                                    <constraint firstItem="Yf4-9Z-uGM" firstAttribute="top" secondItem="F1C-Dx-w6l" secondAttribute="top" constant="32" id="8BC-CF-mHR"/>
+                                    <constraint firstItem="Yf4-9Z-uGM" firstAttribute="leading" secondItem="F1C-Dx-w6l" secondAttribute="leading" constant="20" type="default" id="MwJ-fd-Rqy"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="lblName" destination="Yf4-9Z-uGM" id="dcr-F9-atp"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                     </collectionView>
@@ -44,10 +49,13 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="WaG-2o-zUz"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="zNp-gb-TWS"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mainCollectV" destination="8ri-u6-6kA" id="9q8-Aw-UTx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="619" y="-122"/>
+            <point key="canvasLocation" x="619" y="-42"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZNb-tC-iWs">
@@ -84,8 +92,17 @@
         <class className="UICollectionViewLayout" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
+        <class className="pdMainViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/pdMainViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="lblName" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="pdViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/pdViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="mainCollectV" candidateClass="UICollectionView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
