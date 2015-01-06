@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D06E7ED1864D528007C4015 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D06E7EC1864D528007C4015 /* UIKit.framework */; };
+		9D06E7EF1864D528007C4015 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D06E7EE1864D528007C4015 /* Foundation.framework */; };
+		9D06E7F71864D528007C4015 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D06E7F51864D528007C4015 /* InfoPlist.strings */; };
+		9D06E7F91864D528007C4015 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E7F81864D528007C4015 /* main.m */; };
+		9D06E7FD1864D528007C4015 /* ttAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E7FC1864D528007C4015 /* ttAppDelegate.m */; };
+		9D06E7FF1864D528007C4015 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D06E7FE1864D528007C4015 /* Default.png */; };
+		9D06E8011864D528007C4015 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D06E8001864D528007C4015 /* Default@2x.png */; };
+		9D06E8031864D528007C4015 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D06E8021864D528007C4015 /* Default-568h@2x.png */; };
+		9D06E8061864D528007C4015 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D06E8041864D528007C4015 /* MainStoryboard_iPhone.storyboard */; };
+		9D06E8091864D528007C4015 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D06E8071864D528007C4015 /* MainStoryboard_iPad.storyboard */; };
+		9D06E80C1864D528007C4015 /* ttMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E80B1864D528007C4015 /* ttMasterViewController.m */; };
+		9D06E82B1864FF82007C4015 /* ttProjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E82A1864FF82007C4015 /* ttProjects.m */; };
+		9D06E82D18650399007C4015 /* tTracker.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9D06E82C18650399007C4015 /* tTracker.sqlite */; };
+		9D06E83F18665498007C4015 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E83518665498007C4015 /* FMDatabase.m */; };
+		9D06E84018665498007C4015 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E83718665498007C4015 /* FMDatabaseAdditions.m */; };
+		9D06E84118665498007C4015 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E83918665498007C4015 /* FMDatabasePool.m */; };
+		9D06E84218665498007C4015 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E83B18665498007C4015 /* FMDatabaseQueue.m */; };
+		9D06E84418665498007C4015 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D06E83E18665498007C4015 /* FMResultSet.m */; };
+		9D189FFB187C88E600D77F44 /* ttTaskCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D189FFA187C88E600D77F44 /* ttTaskCollectionViewCell.m */; };
+		9D23BE0E187CE4790066749C /* appBackImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D23BE0C187CE4790066749C /* appBackImage.png */; };
+		9D23BE0F187CE4790066749C /* collectionCellBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D23BE0D187CE4790066749C /* collectionCellBack.png */; };
+		9D23BE11187CE9450066749C /* tableCellBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D23BE10187CE9450066749C /* tableCellBack.png */; };
+		9D23BE18187CEBB20066749C /* ttProjectListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D23BE17187CEBB20066749C /* ttProjectListCell.m */; };
+		9D23BE1B187CF9070066749C /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D23BE19187CF9070066749C /* clock.png */; };
+		9D23BE1E187CFC5E0066749C /* commonBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D23BE1D187CFC5E0066749C /* commonBack.png */; };
+		9D6BE4BB1867D340002ACED9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6BE4BA1867D340002ACED9 /* libsqlite3.0.dylib */; };
+		9D6BE4BF1867F32A002ACED9 /* ttAddProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6BE4BD1867F32A002ACED9 /* ttAddProjectsViewController.m */; };
+		9D6BE4C01867F32A002ACED9 /* ttAddProjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D6BE4BE1867F32A002ACED9 /* ttAddProjectsViewController.xib */; };
+		9D8A2979187D08F3007314F3 /* appBackImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8A2977187D08F3007314F3 /* appBackImage1.png */; };
+		9D8A297A187D08F3007314F3 /* appBackImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8A2978187D08F3007314F3 /* appBackImage2.png */; };
+		9D8A297C187D0C80007314F3 /* task.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D8A297B187D0C80007314F3 /* task.png */; };
+		9DCFCB8D18809FCB00CEE258 /* ttTimeEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCFCB8B18809FCB00CEE258 /* ttTimeEntryViewController.m */; };
+		9DCFCB8E18809FCB00CEE258 /* ttTimeEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DCFCB8C18809FCB00CEE258 /* ttTimeEntryViewController.xib */; };
+		9DD6B7E7187FAA7100F1F996 /* ttAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6B7E5187FAA7100F1F996 /* ttAddTaskViewController.m */; };
+		9DD6B7E8187FAA7100F1F996 /* ttAddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DD6B7E6187FAA7100F1F996 /* ttAddTaskViewController.xib */; };
+		9DF837BA187BD81200DC9CE0 /* ttDetailCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF837B9187BD81200DC9CE0 /* ttDetailCollectionViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D06E7E91864D528007C4015 /* timeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D06E7EC1864D528007C4015 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D06E7EE1864D528007C4015 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D06E7F01864D528007C4015 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D06E7F41864D528007C4015 /* timeTracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "timeTracker-Info.plist"; sourceTree = "<group>"; };
+		9D06E7F61864D528007C4015 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D06E7F81864D528007C4015 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D06E7FA1864D528007C4015 /* timeTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "timeTracker-Prefix.pch"; sourceTree = "<group>"; };
+		9D06E7FB1864D528007C4015 /* ttAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ttAppDelegate.h; sourceTree = "<group>"; };
+		9D06E7FC1864D528007C4015 /* ttAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ttAppDelegate.m; sourceTree = "<group>"; };
+		9D06E7FE1864D528007C4015 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9D06E8001864D528007C4015 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		9D06E8021864D528007C4015 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		9D06E8051864D528007C4015 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		9D06E8081864D528007C4015 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		9D06E80A1864D528007C4015 /* ttMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ttMasterViewController.h; sourceTree = "<group>"; };
+		9D06E80B1864D528007C4015 /* ttMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ttMasterViewController.m; sourceTree = "<group>"; };
+		9D06E8271864FD41007C4015 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9D06E8291864FF82007C4015 /* ttProjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttProjects.h; path = timeTracker/ttProjects.h; sourceTree = "<group>"; };
+		9D06E82A1864FF82007C4015 /* ttProjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttProjects.m; path = timeTracker/ttProjects.m; sourceTree = "<group>"; };
+		9D06E82C18650399007C4015 /* tTracker.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = tTracker.sqlite; sourceTree = "<group>"; };
+		9D06E83418665498007C4015 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		9D06E83518665498007C4015 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		9D06E83618665498007C4015 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		9D06E83718665498007C4015 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		9D06E83818665498007C4015 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		9D06E83918665498007C4015 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		9D06E83A18665498007C4015 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		9D06E83B18665498007C4015 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		9D06E83D18665498007C4015 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		9D06E83E18665498007C4015 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		9D189FF9187C88E600D77F44 /* ttTaskCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttTaskCollectionViewCell.h; sourceTree = "<group>"; };
+		9D189FFA187C88E600D77F44 /* ttTaskCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttTaskCollectionViewCell.m; sourceTree = "<group>"; };
+		9D23BE0C187CE4790066749C /* appBackImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appBackImage.png; sourceTree = "<group>"; };
+		9D23BE0D187CE4790066749C /* collectionCellBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collectionCellBack.png; sourceTree = "<group>"; };
+		9D23BE10187CE9450066749C /* tableCellBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableCellBack.png; sourceTree = "<group>"; };
+		9D23BE16187CEBB20066749C /* ttProjectListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttProjectListCell.h; path = timeTracker/ttProjectListCell.h; sourceTree = "<group>"; };
+		9D23BE17187CEBB20066749C /* ttProjectListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttProjectListCell.m; path = timeTracker/ttProjectListCell.m; sourceTree = "<group>"; };
+		9D23BE19187CF9070066749C /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		9D23BE1D187CFC5E0066749C /* commonBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commonBack.png; sourceTree = "<group>"; };
+		9D6BE4BA1867D340002ACED9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		9D6BE4BC1867F32A002ACED9 /* ttAddProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttAddProjectsViewController.h; path = timeTracker/ttAddProjectsViewController.h; sourceTree = "<group>"; };
+		9D6BE4BD1867F32A002ACED9 /* ttAddProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttAddProjectsViewController.m; path = timeTracker/ttAddProjectsViewController.m; sourceTree = "<group>"; };
+		9D6BE4BE1867F32A002ACED9 /* ttAddProjectsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ttAddProjectsViewController.xib; path = timeTracker/ttAddProjectsViewController.xib; sourceTree = "<group>"; };
+		9D8A2977187D08F3007314F3 /* appBackImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appBackImage1.png; sourceTree = "<group>"; };
+		9D8A2978187D08F3007314F3 /* appBackImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appBackImage2.png; sourceTree = "<group>"; };
+		9D8A297B187D0C80007314F3 /* task.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = task.png; sourceTree = "<group>"; };
+		9DCFCB8A18809FCB00CEE258 /* ttTimeEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttTimeEntryViewController.h; path = timeTracker/ttTimeEntryViewController.h; sourceTree = "<group>"; };
+		9DCFCB8B18809FCB00CEE258 /* ttTimeEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttTimeEntryViewController.m; path = timeTracker/ttTimeEntryViewController.m; sourceTree = "<group>"; };
+		9DCFCB8C18809FCB00CEE258 /* ttTimeEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ttTimeEntryViewController.xib; path = timeTracker/ttTimeEntryViewController.xib; sourceTree = "<group>"; };
+		9DD6B7E4187FAA7100F1F996 /* ttAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ttAddTaskViewController.h; path = timeTracker/ttAddTaskViewController.h; sourceTree = "<group>"; };
+		9DD6B7E5187FAA7100F1F996 /* ttAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ttAddTaskViewController.m; path = timeTracker/ttAddTaskViewController.m; sourceTree = "<group>"; };
+		9DD6B7E6187FAA7100F1F996 /* ttAddTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ttAddTaskViewController.xib; path = timeTracker/ttAddTaskViewController.xib; sourceTree = "<group>"; };
+		9DF837B8187BD81200DC9CE0 /* ttDetailCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ttDetailCollectionViewController.h; sourceTree = "<group>"; };
+		9DF837B9187BD81200DC9CE0 /* ttDetailCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ttDetailCollectionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D06E7E61864D528007C4015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D6BE4BB1867D340002ACED9 /* libsqlite3.0.dylib in Frameworks */,
+				9D06E7ED1864D528007C4015 /* UIKit.framework in Frameworks */,
+				9D06E7EF1864D528007C4015 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D06E7E01864D528007C4015 = {
+			isa = PBXGroup;
+			children = (
+				9DCFCB8A18809FCB00CEE258 /* ttTimeEntryViewController.h */,
+				9DCFCB8B18809FCB00CEE258 /* ttTimeEntryViewController.m */,
+				9DCFCB8C18809FCB00CEE258 /* ttTimeEntryViewController.xib */,
+				9DD6B7E4187FAA7100F1F996 /* ttAddTaskViewController.h */,
+				9DD6B7E5187FAA7100F1F996 /* ttAddTaskViewController.m */,
+				9DD6B7E6187FAA7100F1F996 /* ttAddTaskViewController.xib */,
+				9D23BE16187CEBB20066749C /* ttProjectListCell.h */,
+				9D23BE17187CEBB20066749C /* ttProjectListCell.m */,
+				9D6BE4BC1867F32A002ACED9 /* ttAddProjectsViewController.h */,
+				9D6BE4BD1867F32A002ACED9 /* ttAddProjectsViewController.m */,
+				9D6BE4BE1867F32A002ACED9 /* ttAddProjectsViewController.xib */,
+				9D6BE4BA1867D340002ACED9 /* libsqlite3.0.dylib */,
+				9D06E8291864FF82007C4015 /* ttProjects.h */,
+				9D06E82A1864FF82007C4015 /* ttProjects.m */,
+				9D06E8271864FD41007C4015 /* libsqlite3.dylib */,
+				9D06E7F21864D528007C4015 /* timeTracker */,
+				9D06E7EB1864D528007C4015 /* Frameworks */,
+				9D06E7EA1864D528007C4015 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D06E7EA1864D528007C4015 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D06E7E91864D528007C4015 /* timeTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D06E7EB1864D528007C4015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D06E83318665498007C4015 /* FMDB */,
+				9D06E7EC1864D528007C4015 /* UIKit.framework */,
+				9D06E7EE1864D528007C4015 /* Foundation.framework */,
+				9D06E7F01864D528007C4015 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D06E7F21864D528007C4015 /* timeTracker */ = {
+			isa = PBXGroup;
+			children = (
+				9D23BE0C187CE4790066749C /* appBackImage.png */,
+				9D23BE0D187CE4790066749C /* collectionCellBack.png */,
+				9D189FF9187C88E600D77F44 /* ttTaskCollectionViewCell.h */,
+				9D189FFA187C88E600D77F44 /* ttTaskCollectionViewCell.m */,
+				9DF837B8187BD81200DC9CE0 /* ttDetailCollectionViewController.h */,
+				9DF837B9187BD81200DC9CE0 /* ttDetailCollectionViewController.m */,
+				9D06E82C18650399007C4015 /* tTracker.sqlite */,
+				9D06E7FB1864D528007C4015 /* ttAppDelegate.h */,
+				9D06E7FC1864D528007C4015 /* ttAppDelegate.m */,
+				9D06E8041864D528007C4015 /* MainStoryboard_iPhone.storyboard */,
+				9D06E8071864D528007C4015 /* MainStoryboard_iPad.storyboard */,
+				9D06E80A1864D528007C4015 /* ttMasterViewController.h */,
+				9D06E80B1864D528007C4015 /* ttMasterViewController.m */,
+				9D23BE10187CE9450066749C /* tableCellBack.png */,
+				9D23BE19187CF9070066749C /* clock.png */,
+				9D8A2977187D08F3007314F3 /* appBackImage1.png */,
+				9D8A2978187D08F3007314F3 /* appBackImage2.png */,
+				9D23BE1D187CFC5E0066749C /* commonBack.png */,
+				9D8A297B187D0C80007314F3 /* task.png */,
+				9D06E7F31864D528007C4015 /* Supporting Files */,
+			);
+			path = timeTracker;
+			sourceTree = "<group>";
+		};
+		9D06E7F31864D528007C4015 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D06E7F41864D528007C4015 /* timeTracker-Info.plist */,
+				9D06E7F51864D528007C4015 /* InfoPlist.strings */,
+				9D06E7F81864D528007C4015 /* main.m */,
+				9D06E7FA1864D528007C4015 /* timeTracker-Prefix.pch */,
+				9D06E7FE1864D528007C4015 /* Default.png */,
+				9D06E8001864D528007C4015 /* Default@2x.png */,
+				9D06E8021864D528007C4015 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D06E83318665498007C4015 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				9D06E83418665498007C4015 /* FMDatabase.h */,
+				9D06E83518665498007C4015 /* FMDatabase.m */,
+				9D06E83618665498007C4015 /* FMDatabaseAdditions.h */,
+				9D06E83718665498007C4015 /* FMDatabaseAdditions.m */,
+				9D06E83818665498007C4015 /* FMDatabasePool.h */,
+				9D06E83918665498007C4015 /* FMDatabasePool.m */,
+				9D06E83A18665498007C4015 /* FMDatabaseQueue.h */,
+				9D06E83B18665498007C4015 /* FMDatabaseQueue.m */,
+				9D06E83D18665498007C4015 /* FMResultSet.h */,
+				9D06E83E18665498007C4015 /* FMResultSet.m */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D06E7E81864D528007C4015 /* timeTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D06E8121864D528007C4015 /* Build configuration list for PBXNativeTarget "timeTracker" */;
+			buildPhases = (
+				9D06E7E51864D528007C4015 /* Sources */,
+				9D06E7E61864D528007C4015 /* Frameworks */,
+				9D06E7E71864D528007C4015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = timeTracker;
+			productName = timeTracker;
+			productReference = 9D06E7E91864D528007C4015 /* timeTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D06E7E11864D528007C4015 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = tt;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Arivoli;
+			};
+			buildConfigurationList = 9D06E7E41864D528007C4015 /* Build configuration list for PBXProject "timeTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9D06E7E01864D528007C4015;
+			productRefGroup = 9D06E7EA1864D528007C4015 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D06E7E81864D528007C4015 /* timeTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D06E7E71864D528007C4015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D06E7F71864D528007C4015 /* InfoPlist.strings in Resources */,
+				9D06E7FF1864D528007C4015 /* Default.png in Resources */,
+				9D06E8011864D528007C4015 /* Default@2x.png in Resources */,
+				9D06E8031864D528007C4015 /* Default-568h@2x.png in Resources */,
+				9D06E8061864D528007C4015 /* MainStoryboard_iPhone.storyboard in Resources */,
+				9D06E8091864D528007C4015 /* MainStoryboard_iPad.storyboard in Resources */,
+				9D06E82D18650399007C4015 /* tTracker.sqlite in Resources */,
+				9D6BE4C01867F32A002ACED9 /* ttAddProjectsViewController.xib in Resources */,
+				9D23BE0E187CE4790066749C /* appBackImage.png in Resources */,
+				9D23BE0F187CE4790066749C /* collectionCellBack.png in Resources */,
+				9D23BE11187CE9450066749C /* tableCellBack.png in Resources */,
+				9D23BE1B187CF9070066749C /* clock.png in Resources */,
+				9D23BE1E187CFC5E0066749C /* commonBack.png in Resources */,
+				9D8A2979187D08F3007314F3 /* appBackImage1.png in Resources */,
+				9D8A297A187D08F3007314F3 /* appBackImage2.png in Resources */,
+				9D8A297C187D0C80007314F3 /* task.png in Resources */,
+				9DD6B7E8187FAA7100F1F996 /* ttAddTaskViewController.xib in Resources */,
+				9DCFCB8E18809FCB00CEE258 /* ttTimeEntryViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D06E7E51864D528007C4015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D06E7F91864D528007C4015 /* main.m in Sources */,
+				9D06E7FD1864D528007C4015 /* ttAppDelegate.m in Sources */,
+				9D06E80C1864D528007C4015 /* ttMasterViewController.m in Sources */,
+				9D06E82B1864FF82007C4015 /* ttProjects.m in Sources */,
+				9D06E83F18665498007C4015 /* FMDatabase.m in Sources */,
+				9D06E84018665498007C4015 /* FMDatabaseAdditions.m in Sources */,
+				9D06E84118665498007C4015 /* FMDatabasePool.m in Sources */,
+				9D06E84218665498007C4015 /* FMDatabaseQueue.m in Sources */,
+				9D06E84418665498007C4015 /* FMResultSet.m in Sources */,
+				9D6BE4BF1867F32A002ACED9 /* ttAddProjectsViewController.m in Sources */,
+				9DF837BA187BD81200DC9CE0 /* ttDetailCollectionViewController.m in Sources */,
+				9D189FFB187C88E600D77F44 /* ttTaskCollectionViewCell.m in Sources */,
+				9D23BE18187CEBB20066749C /* ttProjectListCell.m in Sources */,
+				9DD6B7E7187FAA7100F1F996 /* ttAddTaskViewController.m in Sources */,
+				9DCFCB8D18809FCB00CEE258 /* ttTimeEntryViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D06E7F51864D528007C4015 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D06E7F61864D528007C4015 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9D06E8041864D528007C4015 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D06E8051864D528007C4015 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9D06E8071864D528007C4015 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D06E8081864D528007C4015 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D06E8101864D528007C4015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D06E8111864D528007C4015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D06E8131864D528007C4015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "timeTracker/timeTracker-Prefix.pch";
+				INFOPLIST_FILE = "timeTracker/timeTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9D06E8141864D528007C4015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "timeTracker/timeTracker-Prefix.pch";
+				INFOPLIST_FILE = "timeTracker/timeTracker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D06E7E41864D528007C4015 /* Build configuration list for PBXProject "timeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D06E8101864D528007C4015 /* Debug */,
+				9D06E8111864D528007C4015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D06E8121864D528007C4015 /* Build configuration list for PBXNativeTarget "timeTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D06E8131864D528007C4015 /* Debug */,
+				9D06E8141864D528007C4015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D06E7E11864D528007C4015 /* Project object */;
+}
