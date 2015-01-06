@@ -19,10 +19,20 @@ static NSMutableArray *maleInfo, *femaleInfo;
 @end
 
 @implementation matchViewController
-
+@synthesize bannerIsVisible;
 
 - (void)viewDidLoad
 {
+    adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    adView.frame = CGRectOffset(adView.frame, 0, -50);
+    adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+    //adView.requiredContentSizeIdentifiers = [NSSet setWithObject: ADBannerContentSizeIdentifierLandscape];
+    //adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+    [self.view addSubview:adView];
+    adView.delegate=self;
+    self.bannerIsVisible=NO;
+    
+    
     [super viewDidLoad];
     self.title = @"sMatcher";
     por = [[porutham alloc]init];
@@ -30,7 +40,7 @@ static NSMutableArray *maleInfo, *femaleInfo;
     //defalt =[userInfo objectForKey:@"default"];
     [self assignInfo:[userInfo objectForKey:@"gender"] valueArr:[NSArray arrayWithObjects:[[por getStarInfo:[userInfo objectForKey:@"star_idn"]] objectAtIndex:0],[[por getRasiInfo:[userInfo objectForKey:@"rasi_idn"]] objectAtIndex:0], nil]];
 
-    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paperback.jpg"]]];
+    //[self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paperback.jpg"]]];
     
     //[[self tableView] setBackgroundColor: [UIColor colorWithPatternImage: [UIImage imageNamed:@"paperback.jpg"]]];
     //UIBarButtonItem *btn =[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(setUserSetting)];
@@ -153,6 +163,31 @@ static NSMutableArray *maleInfo, *femaleInfo;
         [self getMatchInfo:self];
     }
     //NSLog(@"welcome %@", indexPath);
+}
+
+
+-(void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+    if (!self.bannerIsVisible)
+    {
+        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+        banner.frame = CGRectOffset(banner.frame, 0, 50);
+        [UIView commitAnimations];
+        self.bannerIsVisible = YES;
+    }
+}
+
+-(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError
+                                                                      *)error
+
+{
+    if (self.bannerIsVisible)
+    {
+        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+        banner.frame = CGRectOffset(banner.frame, 0, -50);
+        [UIView commitAnimations];
+        self.bannerIsVisible = NO;
+    }
 }
 
 

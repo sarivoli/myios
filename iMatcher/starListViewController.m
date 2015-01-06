@@ -33,7 +33,8 @@
     if(self.gender){
         pgTitle = self.gender;
     }
-      [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paperback.jpg"]]];
+   
+    //[self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paperback.jpg"]]];
     self.title = [NSString stringWithFormat:@"Select %@ Star",pgTitle];
     //[self.navigationItem setTitle:[NSString stringWithFormat:@"Select %@ Star",self.gender]];
 
@@ -76,7 +77,7 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
         //        [[cell textLabel]setText:[urllist objectAtIndex:[indexPath row]]];
-        [cell setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cellback.png"]]];
+        //[cell setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cellback.png"]]];
         [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
 
     }

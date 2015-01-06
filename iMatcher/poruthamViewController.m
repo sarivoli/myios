@@ -37,7 +37,7 @@
     //self.tableView.backgroundColor= [UIColor colorWithPatternImage: [UIImage imageNamed:@"paperback.jpg"]];
     [[self tableView]setSeparatorStyle:UITableViewCellSeparatorStyleSingleLineEtched];
     
-    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paperback.jpg"]]];
+    //[self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paperback.jpg"]]];
     
     
     

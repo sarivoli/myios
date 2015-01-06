@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C892BB817E9541B00590606 /* two-hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C892BB717E9541B00590606 /* two-hearts.png */; };
+		7C892BBA17E9594A00590606 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C892BB917E9594A00590606 /* iAd.framework */; };
+		7C9CBF8017E9FC680082993B /* appIconiphoneRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C9CBF7F17E9FC680082993B /* appIconiphoneRetina.png */; };
+		7C9CBF8217E9FF910082993B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C9CBF8117E9FF910082993B /* Media.xcassets */; };
+		7CE1DE5917E951AD0087CB8C /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CE1DE5817E951AD0087CB8C /* profile.png */; };
+		7CEFB57C17E9EBE0000800E8 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEFB57317E9EBE0000800E8 /* appicon.png */; };
+		7CEFB57D17E9EBE0000800E8 /* AppIconIpadMini.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEFB57417E9EBE0000800E8 /* AppIconIpadMini.png */; };
+		7CEFB57E17E9EBE0000800E8 /* appIconRetinaiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEFB57517E9EBE0000800E8 /* appIconRetinaiPad.png */; };
+		7CEFB57F17E9EBE0000800E8 /* appstoreicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEFB57617E9EBE0000800E8 /* appstoreicon.png */; };
+		7CEFB58017E9EBE0000800E8 /* appStoreIpadMini.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEFB57717E9EBE0000800E8 /* appStoreIpadMini.png */; };
+		7CEFB58217E9EBE0000800E8 /* settingIconiPadMini.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEFB57917E9EBE0000800E8 /* settingIconiPadMini.png */; };
+		7CEFB58317E9EBE0000800E8 /* spotlighticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEFB57A17E9EBE0000800E8 /* spotlighticon.png */; };
+		7CEFB58417E9EBE0000800E8 /* spotLIghtIpadMini.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CEFB57B17E9EBE0000800E8 /* spotLIghtIpadMini.png */; };
 		9D033EDC1666183B00EE47EC /* poruthamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D033EDA1666183B00EE47EC /* poruthamViewController.m */; };
 		9D033EDD1666183B00EE47EC /* poruthamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D033EDB1666183B00EE47EC /* poruthamViewController.xib */; };
-		9D033EE716668C9C00EE47EC /* imatcher_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D033EE616668C9C00EE47EC /* imatcher_nor.png */; };
-		9D033EE916668CA700EE47EC /* imatch_rt.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D033EE816668CA700EE47EC /* imatch_rt.png */; };
 		9D033EEB1666900700EE47EC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D033EEA1666900700EE47EC /* Default.png */; };
 		9D033EED1666900E00EE47EC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D033EEC1666900E00EE47EC /* Default@2x.png */; };
 		9D064988165027E4003E2CD3 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D064986165027E4003E2CD3 /* female.png */; };
@@ -66,8 +77,6 @@
 		9DB4F8FE165BFF56005468C3 /* matchInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4F8FC165BFF56005468C3 /* matchInfoViewController.xib */; };
 		9DD3573B166536C300E93472 /* cellback.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DD3573A166536C300E93472 /* cellback.png */; };
 		9DD3573D1665379C00E93472 /* sMatcher.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9DD3573C1665379C00E93472 /* sMatcher.sqlite */; };
-		9DD99F5E16CE318B00782057 /* appicon7272.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DD99F5D16CE318B00782057 /* appicon7272.png */; };
-		9DD99F6016CE31B400782057 /* appicon144.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DD99F5F16CE31B400782057 /* appicon144.png */; };
 		9DE89FF91678969F00F69C2A /* poruthamCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE89FF81678969E00F69C2A /* poruthamCell.m */; };
 		9DFABD36164E21E000BB588D /* aboutmeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFABD35164E21E000BB588D /* aboutmeViewController.m */; };
 		9DFABD3A164E21F600BB588D /* aboutAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFABD39164E21F600BB588D /* aboutAppViewController.m */; };
@@ -76,11 +85,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C892BB717E9541B00590606 /* two-hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "two-hearts.png"; sourceTree = "<group>"; };
+		7C892BB917E9594A00590606 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		7C9CBF7C17E9EEDC0082993B /* settingicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingicon.png; sourceTree = "<group>"; };
+		7C9CBF7F17E9FC680082993B /* appIconiphoneRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconiphoneRetina.png; sourceTree = "<group>"; };
+		7C9CBF8117E9FF910082993B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = sMatcher/Media.xcassets; sourceTree = "<group>"; };
+		7CE1DE5817E951AD0087CB8C /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		7CEFB57317E9EBE0000800E8 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
+		7CEFB57417E9EBE0000800E8 /* AppIconIpadMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIconIpadMini.png; sourceTree = "<group>"; };
+		7CEFB57517E9EBE0000800E8 /* appIconRetinaiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIconRetinaiPad.png; sourceTree = "<group>"; };
+		7CEFB57617E9EBE0000800E8 /* appstoreicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appstoreicon.png; sourceTree = "<group>"; };
+		7CEFB57717E9EBE0000800E8 /* appStoreIpadMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appStoreIpadMini.png; sourceTree = "<group>"; };
+		7CEFB57917E9EBE0000800E8 /* settingIconiPadMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingIconiPadMini.png; sourceTree = "<group>"; };
+		7CEFB57A17E9EBE0000800E8 /* spotlighticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotlighticon.png; sourceTree = "<group>"; };
+		7CEFB57B17E9EBE0000800E8 /* spotLIghtIpadMini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotLIghtIpadMini.png; sourceTree = "<group>"; };
 		9D033ED91666183B00EE47EC /* poruthamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poruthamViewController.h; sourceTree = "<group>"; };
 		9D033EDA1666183B00EE47EC /* poruthamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = poruthamViewController.m; sourceTree = "<group>"; };
 		9D033EDB1666183B00EE47EC /* poruthamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = poruthamViewController.xib; sourceTree = "<group>"; };
-		9D033EE616668C9C00EE47EC /* imatcher_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imatcher_nor.png; sourceTree = "<group>"; };
-		9D033EE816668CA700EE47EC /* imatch_rt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imatch_rt.png; sourceTree = "<group>"; };
 		9D033EEA1666900700EE47EC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		9D033EEC1666900E00EE47EC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		9D064986165027E4003E2CD3 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
@@ -153,8 +174,6 @@
 		9DB4F8FC165BFF56005468C3 /* matchInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = matchInfoViewController.xib; sourceTree = "<group>"; };
 		9DD3573A166536C300E93472 /* cellback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellback.png; sourceTree = "<group>"; };
 		9DD3573C1665379C00E93472 /* sMatcher.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = sMatcher.sqlite; sourceTree = "<group>"; };
-		9DD99F5D16CE318B00782057 /* appicon7272.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon7272.png; sourceTree = "<group>"; };
-		9DD99F5F16CE31B400782057 /* appicon144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon144.png; sourceTree = "<group>"; };
 		9DE89FF71678969E00F69C2A /* poruthamCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poruthamCell.h; sourceTree = "<group>"; };
 		9DE89FF81678969E00F69C2A /* poruthamCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = poruthamCell.m; sourceTree = "<group>"; };
 		9DFABD34164E21E000BB588D /* aboutmeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aboutmeViewController.h; sourceTree = "<group>"; };
@@ -170,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C892BBA17E9594A00590606 /* iAd.framework in Frameworks */,
 				9D4CA9CE1621F27500D46A1D /* libsqlite3.dylib in Frameworks */,
 				9D4CA99B1621E58D00D46A1D /* UIKit.framework in Frameworks */,
 				9D4CA99D1621E58D00D46A1D /* Foundation.framework in Frameworks */,
@@ -180,14 +200,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C9CBF8417EA147E0082993B /* appImages */ = {
+			isa = PBXGroup;
+			children = (
+				9D033EEC1666900E00EE47EC /* Default@2x.png */,
+				9D033EEA1666900700EE47EC /* Default.png */,
+				7C9CBF7F17E9FC680082993B /* appIconiphoneRetina.png */,
+				7C9CBF7C17E9EEDC0082993B /* settingicon.png */,
+				7CEFB57317E9EBE0000800E8 /* appicon.png */,
+				7CEFB57417E9EBE0000800E8 /* AppIconIpadMini.png */,
+				7CEFB57517E9EBE0000800E8 /* appIconRetinaiPad.png */,
+				7CEFB57617E9EBE0000800E8 /* appstoreicon.png */,
+				7CEFB57717E9EBE0000800E8 /* appStoreIpadMini.png */,
+				7CEFB57917E9EBE0000800E8 /* settingIconiPadMini.png */,
+				7CEFB57A17E9EBE0000800E8 /* spotlighticon.png */,
+				7CEFB57B17E9EBE0000800E8 /* spotLIghtIpadMini.png */,
+			);
+			name = appImages;
+			sourceTree = "<group>";
+		};
 		9D4CA98B1621E58D00D46A1D = {
 			isa = PBXGroup;
 			children = (
+				7C9CBF8117E9FF910082993B /* Media.xcassets */,
 				9D82B9AE1677861E00E75DA6 /* iPad */,
-				9D033EEC1666900E00EE47EC /* Default@2x.png */,
-				9D033EEA1666900700EE47EC /* Default.png */,
-				9D033EE816668CA700EE47EC /* imatch_rt.png */,
-				9D033EE616668C9C00EE47EC /* imatcher_nor.png */,
 				9D34DA111648421500B4E78A /* iMatcher.storyboard */,
 				9D82B9A31677714E00E75DA6 /* sMatcher_new_iPad.storyboard */,
 				9D3366F5162D3F5D009EF7D8 /* Default-568h@2x.png */,
@@ -212,6 +248,7 @@
 		9D4CA9991621E58D00D46A1D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C892BB917E9594A00590606 /* iAd.framework */,
 				9D4CA99A1621E58D00D46A1D /* UIKit.framework */,
 				9D4CA99C1621E58D00D46A1D /* Foundation.framework */,
 				9D4CA99E1621E58D00D46A1D /* CoreGraphics.framework */,
@@ -255,8 +292,9 @@
 		9D4CA9C31621E91C00D46A1D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9DD99F5F16CE31B400782057 /* appicon144.png */,
-				9DD99F5D16CE318B00782057 /* appicon7272.png */,
+				7C9CBF8417EA147E0082993B /* appImages */,
+				7C892BB717E9541B00590606 /* two-hearts.png */,
+				7CE1DE5817E951AD0087CB8C /* profile.png */,
 				9D9529EF16CD27DD005E0981 /* athamam.png */,
 				9D9529F016CD27DD005E0981 /* mathimam.png */,
 				9D9529F116CD27DD005E0981 /* uthamam.png */,
@@ -299,6 +337,10 @@
 		9D4CA9C71621EB0400D46A1D /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9D2EB5E71697456A00048B4E /* languageViewController.h */,
+				9D2EB5E81697456A00048B4E /* languageViewController.m */,
+				9DAF20C31690BD980076AFED /* feedbackViewController.h */,
+				9DAF20C41690BD980076AFED /* feedbackViewController.m */,
 				9D033ED91666183B00EE47EC /* poruthamViewController.h */,
 				9D033EDA1666183B00EE47EC /* poruthamViewController.m */,
 				9D033EDB1666183B00EE47EC /* poruthamViewController.xib */,
@@ -325,10 +367,6 @@
 		9D82B9AE1677861E00E75DA6 /* iPad */ = {
 			isa = PBXGroup;
 			children = (
-				9D2EB5E71697456A00048B4E /* languageViewController.h */,
-				9D2EB5E81697456A00048B4E /* languageViewController.m */,
-				9DAF20C31690BD980076AFED /* feedbackViewController.h */,
-				9DAF20C41690BD980076AFED /* feedbackViewController.m */,
 				9D6234581686379E00197BC8 /* ipadpaperback.png */,
 				9D55E3111689867800F22772 /* popOverTableViewController.h */,
 				9D55E3121689867800F22772 /* popOverTableViewController.m */,
@@ -397,8 +435,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEFB57C17E9EBE0000800E8 /* appicon.png in Resources */,
 				9D4CA9A51621E58D00D46A1D /* InfoPlist.strings in Resources */,
+				7CEFB58317E9EBE0000800E8 /* spotlighticon.png in Resources */,
 				9D3366F6162D3F5D009EF7D8 /* Default-568h@2x.png in Resources */,
+				7CEFB57E17E9EBE0000800E8 /* appIconRetinaiPad.png in Resources */,
+				7C9CBF8217E9FF910082993B /* Media.xcassets in Resources */,
 				9D34DA121648421500B4E78A /* iMatcher.storyboard in Resources */,
 				9D9794FA16498EC20025010D /* blackheart.png in Resources */,
 				9D9794FB16498EC20025010D /* redheart.png in Resources */,
@@ -410,15 +452,19 @@
 				9DB4F8F1165BEE49005468C3 /* paperback.jpg in Resources */,
 				9DB4F8FE165BFF56005468C3 /* matchInfoViewController.xib in Resources */,
 				9D5B7555165D3B0600157FE4 /* navbar.png in Resources */,
+				7C9CBF8017E9FC680082993B /* appIconiphoneRetina.png in Resources */,
 				9DD3573B166536C300E93472 /* cellback.png in Resources */,
 				9DD3573D1665379C00E93472 /* sMatcher.sqlite in Resources */,
 				9D033EDD1666183B00EE47EC /* poruthamViewController.xib in Resources */,
-				9D033EE716668C9C00EE47EC /* imatcher_nor.png in Resources */,
-				9D033EE916668CA700EE47EC /* imatch_rt.png in Resources */,
+				7CEFB57F17E9EBE0000800E8 /* appstoreicon.png in Resources */,
 				9D033EEB1666900700EE47EC /* Default.png in Resources */,
+				7CE1DE5917E951AD0087CB8C /* profile.png in Resources */,
+				7C892BB817E9541B00590606 /* two-hearts.png in Resources */,
 				9D033EED1666900E00EE47EC /* Default@2x.png in Resources */,
 				9D7599C21667DF3500FDBFF7 /* capricorn.png in Resources */,
 				9D7599C31667DF3500FDBFF7 /* taurus.png in Resources */,
+				7CEFB57D17E9EBE0000800E8 /* AppIconIpadMini.png in Resources */,
+				7CEFB58217E9EBE0000800E8 /* settingIconiPadMini.png in Resources */,
 				9D7599C41667DF3500FDBFF7 /* gemini.png in Resources */,
 				9D7599C51667DF3500FDBFF7 /* aquarius.png in Resources */,
 				9D7599C61667DF3500FDBFF7 /* cancer.png in Resources */,
@@ -430,16 +476,16 @@
 				9D7599CC1667DF3500FDBFF7 /* aries.png in Resources */,
 				9D7599CD1667DF3500FDBFF7 /* libra.png in Resources */,
 				9D82B9A41677714E00E75DA6 /* sMatcher_new_iPad.storyboard in Resources */,
+				7CEFB58417E9EBE0000800E8 /* spotLIghtIpadMini.png in Resources */,
 				9D82B9AD167784AF00E75DA6 /* starPickerView.xib in Resources */,
 				9D243B731678BDE300831AF0 /* poruthamCell.xib in Resources */,
 				9D62345616862CA500197BC8 /* dropdown.png in Resources */,
+				7CEFB58017E9EBE0000800E8 /* appStoreIpadMini.png in Resources */,
 				9D6234591686379E00197BC8 /* ipadpaperback.png in Resources */,
 				9D2EB5E516972F0800048B4E /* backroll.jpg in Resources */,
 				9D9529F216CD27DD005E0981 /* athamam.png in Resources */,
 				9D9529F316CD27DD005E0981 /* mathimam.png in Resources */,
 				9D9529F416CD27DD005E0981 /* uthamam.png in Resources */,
-				9DD99F5E16CE318B00782057 /* appicon7272.png in Resources */,
-				9DD99F6016CE31B400782057 /* appicon144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +553,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = sMatcher;
 				SDKROOT = iphoneos;
 			};
@@ -527,7 +573,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = sMatcher;
 				SDKROOT = iphoneos;
@@ -538,12 +584,13 @@
 		9D4CA9B51621E58D00D46A1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Arivoli S (P2SX88X5U5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arivoli S (P2SX88X5U5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMatcher/iMatcher-Prefix.pch";
 				INFOPLIST_FILE = "iMatcher/iMatcher-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D331C399-08F7-428D-9893-A20D819F4506";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -555,12 +602,13 @@
 		9D4CA9B61621E58D00D46A1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Arivoli S (P2SX88X5U5)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Arivoli S (P2SX88X5U5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMatcher/iMatcher-Prefix.pch";
 				INFOPLIST_FILE = "iMatcher/iMatcher-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D331C399-08F7-428D-9893-A20D819F4506";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -583,7 +631,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = sMatcher;
 				SDKROOT = iphoneos;
@@ -594,11 +642,12 @@
 		9DCE507B1668E70500EBEA3D /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Arivoli S (P2SX88X5U5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iMatcher/iMatcher-Prefix.pch";
 				INFOPLIST_FILE = "iMatcher/iMatcher-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D331C399-08F7-428D-9893-A20D819F4506";
 				TARGETED_DEVICE_FAMILY = "1,2";

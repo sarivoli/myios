@@ -65,8 +65,8 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
         //        [[cell textLabel]setText:[urllist objectAtIndex:[indexPath row]]];
-        [cell setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cellback.png"]]];
-        [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
+        //[cell setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cellback.png"]]];
+        //[cell setSelectionStyle:UITableViewCellSelectionStyleGray];
         
     }
     [[cell textLabel] setText:[[languages objectAtIndex:indexPath.row] objectForKey:@"title"] ];

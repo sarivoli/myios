@@ -27,11 +27,11 @@
     //self.window.rootViewController = myViewController;
 
     // Configure myViewController.
-    UIImage *myImage = [UIImage imageNamed:@"navbar.png" ];
-    myImage= [myImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 20, 320)];
+    //UIImage *myImage = [UIImage imageNamed:@"navbar.png" ];
+    //myImage= [myImage resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 20, 320)];
     
-    [[UINavigationBar appearance] setBackgroundImage:myImage forBarMetrics:UIBarMetricsDefault];
-    [[UINavigationBar appearance] setTintColor:[UIColor colorWithPatternImage:myImage]]; 
+    //[[UINavigationBar appearance] setBackgroundImage:myImage forBarMetrics:UIBarMetricsDefault];
+    //[[UINavigationBar appearance] setTintColor:[UIColor colorWithPatternImage:myImage]];
 
 
     

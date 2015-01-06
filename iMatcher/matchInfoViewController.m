@@ -29,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[self view] setBackgroundColor: [UIColor colorWithPatternImage: [UIImage imageNamed:@"paperback.jpg"]]];
+   // [[self view] setBackgroundColor: [UIColor colorWithPatternImage: [UIImage imageNamed:@"paperback.jpg"]]];
     [lblTitle setText:[NSString stringWithFormat:@"%@ Porutham",[poruthamInfo objectForKey:@"title"]]];
     [txtPorDesc setText:[poruthamInfo objectForKey:@"desc"]];
 

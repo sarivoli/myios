@@ -34,7 +34,7 @@ static NSMutableDictionary *userInfo;
     [super viewDidLoad];
     por = [[porutham alloc]init];
     userInfo = [[NSMutableDictionary alloc]init];
-    [self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paperback.jpg"]]];
+    //[self.tableView setBackgroundView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"paperback.jpg"]]];
 
 
     // Uncomment the following line to preserve selection between presentations.
