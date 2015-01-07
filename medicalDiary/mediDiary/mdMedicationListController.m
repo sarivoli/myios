@@ -26,12 +26,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    medicationList = [[NSMutableArray alloc] init];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+- (void)viewWillAppear:(BOOL)animated{
+    
+    NSLog(@"View is reloading from Medication LIst ");
+    mdDiary *mdbase=[[mdDiary alloc]init];
+    medicationList = [mdbase getMedicationList:visitId];
+    if([medicationList count]==0){
+        NSMutableDictionary *noResult=[[NSMutableDictionary alloc]init];
+        [noResult setObject:@"No Visits Found" forKey:@"name"];
+        [noResult setObject:@"" forKey:@"freq"];
+        [medicationList addObject:noResult];
+    }
+    [self.tableView reloadData];
+    
+    //NSString *gen,*starName, *rasiName, *defalt = [[NSString alloc]init];
+    
+    
+    //[por saveUserInfo:userInfo];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,23 +64,31 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return [medicationList count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     // Configure the cell...
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        
+        //        [[cell textLabel]setText:[urllist objectAtIndex:[indexPath row]]];
+    }
+    [[cell textLabel] setText:[[medicationList objectAtIndex:indexPath.row] objectForKey:@"name"]];
+    [[cell detailTextLabel] setText:[[medicationList objectAtIndex:indexPath.row] objectForKey:@"use"]];
     
     return cell;
+    // Configure the cell...
 }
 
 /*

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BA36BB7F-DD87-4A85-B6D7-16C5DD53CE43</string>
+	<key>IDESourceControlProjectName</key>
+	<string>mediDiary</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7404D70A-C8A9-4F5E-B750-F91BE2896BCF</key>
+		<string>ssh://github.com/sarivoli/myios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>medicalDiary/mediDiary/mediDiary.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7404D70A-C8A9-4F5E-B750-F91BE2896BCF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/sarivoli/myios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7404D70A-C8A9-4F5E-B750-F91BE2896BCF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7404D70A-C8A9-4F5E-B750-F91BE2896BCF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>myios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

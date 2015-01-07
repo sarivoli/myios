@@ -13,7 +13,7 @@
 @end
 
 @implementation mdVisitsInfoViewController
-@synthesize lblContactInfo,lblDrName,tvReason,visitId;
+@synthesize lblContactInfo,lblDrName,lblReason,visitId,lblHospital;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,9 +30,11 @@
     mdDiary *mdd=[[mdDiary alloc]init];
     NSMutableDictionary *visitInfo =[[NSMutableDictionary alloc] init];
     visitInfo = [mdd getVisitInfo:self.visitId];
-    self.title = [visitInfo objectForKey:@"hospital"];
+    self.title =[visitInfo objectForKey:@"visitdate"];
     [lblDrName setText:[visitInfo objectForKey:@"drname"]];
     [lblContactInfo setText:[visitInfo objectForKey:@"contactinfo"]];
+    [lblHospital setText:[visitInfo objectForKey:@"hospital"]];
+    [lblReason setText:[visitInfo objectForKey:@"reason"]];
 	// Do any additional setup after loading the view.
 }
 
@@ -54,6 +56,9 @@
     else if([segue.identifier isEqualToString:@"addMedication"])
     {
         NSLog(@"Add Medication");
+        mdAddMedicationViewController *dest=[segue destinationViewController];
+        dest.visitId = self.visitId;
+
         
     }
     

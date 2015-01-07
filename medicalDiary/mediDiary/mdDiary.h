@@ -14,12 +14,18 @@
 
 -(void)addProfile:(NSMutableDictionary*)profInfo;
 -(void)addVisits:(NSMutableDictionary*)visitInfo;
+-(void)addMedications:(NSMutableDictionary*)medicationInfo;
+
+
+-(BOOL)delVisits:(id)visitId;
+
 
 -(NSMutableDictionary*)getProfileInfo:(id)profileId;
 -(NSMutableDictionary*)getVisitInfo:(id)visitId;
 
-
 -(NSMutableArray*)getProfileList;
 -(NSMutableArray*)getProfileVisits:(id)profileId;
+-(NSMutableArray*)getMedicationList:(id)visitId;
+
 
 @end

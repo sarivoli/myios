@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7C5AFE5C1806524E00A4B1D6 /* addProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5AFE5A1806524E00A4B1D6 /* addProfile.png */; };
-		7C5AFE5D1806524E00A4B1D6 /* female22.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5AFE5B1806524E00A4B1D6 /* female22.png */; };
+		7C5AFE5D1806524E00A4B1D6 /* female.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5AFE5B1806524E00A4B1D6 /* female.png */; };
+		7C5AFE611806527600A4B1D6 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5AFE5E1806527600A4B1D6 /* checked.png */; };
+		7C5AFE621806527600A4B1D6 /* male.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5AFE5F1806527600A4B1D6 /* male.png */; };
+		7C5AFE631806527600A4B1D6 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C5AFE601806527600A4B1D6 /* uncheck.png */; };
+		7CBA1CEF1A5437660097E9B7 /* visitHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA1CEE1A5437660097E9B7 /* visitHeaderView.m */; };
+		7CBA2B031A5B860F00A23F19 /* mdViewProfileInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBA2B021A5B860F00A23F19 /* mdViewProfileInfoViewController.m */; };
 		7CBD91E517FB4A9F009CA452 /* mdVisitsInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD91E417FB4A9F009CA452 /* mdVisitsInfoViewController.m */; };
 		7CBD91E817FB4C59009CA452 /* mdMedicationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD91E717FB4C59009CA452 /* mdMedicationListController.m */; };
 		7CE8C672180502D000F9F5A0 /* mdAddMedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8C671180502D000F9F5A0 /* mdAddMedicationViewController.m */; };
-		9D25DC4F17F4881E002ECD8A /* mdProfileInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D25DC4E17F4881E002ECD8A /* mdProfileInfoViewController.m */; };
 		9D25DC5217F494A3002ECD8A /* mdVisitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D25DC5117F494A3002ECD8A /* mdVisitsViewController.m */; };
 		9DF656B517F8A3EE007CBFC4 /* mdAddVisitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF656B417F8A3EE007CBFC4 /* mdAddVisitsViewController.m */; };
 		9DFD79DC17F0312F0032B93B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DFD79DB17F0312F0032B93B /* UIKit.framework */; };
@@ -41,15 +45,20 @@
 
 /* Begin PBXFileReference section */
 		7C5AFE5A1806524E00A4B1D6 /* addProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addProfile.png; sourceTree = "<group>"; };
-		7C5AFE5B1806524E00A4B1D6 /* female22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female22.png; sourceTree = "<group>"; };
+		7C5AFE5B1806524E00A4B1D6 /* female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = female.png; sourceTree = "<group>"; };
+		7C5AFE5E1806527600A4B1D6 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checked.png; sourceTree = "<group>"; };
+		7C5AFE5F1806527600A4B1D6 /* male.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = male.png; sourceTree = "<group>"; };
+		7C5AFE601806527600A4B1D6 /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck.png; sourceTree = "<group>"; };
+		7CBA1CED1A5437660097E9B7 /* visitHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = visitHeaderView.h; sourceTree = "<group>"; };
+		7CBA1CEE1A5437660097E9B7 /* visitHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = visitHeaderView.m; sourceTree = "<group>"; };
+		7CBA2B011A5B860F00A23F19 /* mdViewProfileInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdViewProfileInfoViewController.h; sourceTree = "<group>"; };
+		7CBA2B021A5B860F00A23F19 /* mdViewProfileInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdViewProfileInfoViewController.m; sourceTree = "<group>"; };
 		7CBD91E317FB4A9F009CA452 /* mdVisitsInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdVisitsInfoViewController.h; sourceTree = "<group>"; };
 		7CBD91E417FB4A9F009CA452 /* mdVisitsInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdVisitsInfoViewController.m; sourceTree = "<group>"; };
 		7CBD91E617FB4C59009CA452 /* mdMedicationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdMedicationListController.h; sourceTree = "<group>"; };
 		7CBD91E717FB4C59009CA452 /* mdMedicationListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdMedicationListController.m; sourceTree = "<group>"; };
 		7CE8C670180502D000F9F5A0 /* mdAddMedicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdAddMedicationViewController.h; sourceTree = "<group>"; };
 		7CE8C671180502D000F9F5A0 /* mdAddMedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdAddMedicationViewController.m; sourceTree = "<group>"; };
-		9D25DC4D17F4881E002ECD8A /* mdProfileInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdProfileInfoViewController.h; sourceTree = "<group>"; };
-		9D25DC4E17F4881E002ECD8A /* mdProfileInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdProfileInfoViewController.m; sourceTree = "<group>"; };
 		9D25DC5017F494A3002ECD8A /* mdVisitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdVisitsViewController.h; sourceTree = "<group>"; };
 		9D25DC5117F494A3002ECD8A /* mdVisitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdVisitsViewController.m; sourceTree = "<group>"; };
 		9DF656B317F8A3EE007CBFC4 /* mdAddVisitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdAddVisitsViewController.h; sourceTree = "<group>"; };
@@ -103,11 +112,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C45742918105A8800E84D46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DFD7A0317F032200032B93B /* appicon.png */,
+				9DFD7A0117F032180032B93B /* appicon114.png */,
+				7C5AFE5F1806527600A4B1D6 /* male.png */,
+				7C5AFE5B1806524E00A4B1D6 /* female.png */,
+				7C5AFE5A1806524E00A4B1D6 /* addProfile.png */,
+				7C5AFE601806527600A4B1D6 /* uncheck.png */,
+				7C5AFE5E1806527600A4B1D6 /* checked.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		9DFD79CF17F0312F0032B93B = {
 			isa = PBXGroup;
 			children = (
-				7C5AFE5A1806524E00A4B1D6 /* addProfile.png */,
-				7C5AFE5B1806524E00A4B1D6 /* female22.png */,
+				7CBA2B011A5B860F00A23F19 /* mdViewProfileInfoViewController.h */,
+				7CBA2B021A5B860F00A23F19 /* mdViewProfileInfoViewController.m */,
+				7C45742918105A8800E84D46 /* Resources */,
 				7CE8C670180502D000F9F5A0 /* mdAddMedicationViewController.h */,
 				7CE8C671180502D000F9F5A0 /* mdAddMedicationViewController.m */,
 				7CBD91E617FB4C59009CA452 /* mdMedicationListController.h */,
@@ -118,8 +142,8 @@
 				9DF656B417F8A3EE007CBFC4 /* mdAddVisitsViewController.m */,
 				9D25DC5017F494A3002ECD8A /* mdVisitsViewController.h */,
 				9D25DC5117F494A3002ECD8A /* mdVisitsViewController.m */,
-				9D25DC4D17F4881E002ECD8A /* mdProfileInfoViewController.h */,
-				9D25DC4E17F4881E002ECD8A /* mdProfileInfoViewController.m */,
+				7CBA1CED1A5437660097E9B7 /* visitHeaderView.h */,
+				7CBA1CEE1A5437660097E9B7 /* visitHeaderView.m */,
 				9DFD7A2D17F0B4160032B93B /* mdAddProfViewController.h */,
 				9DFD7A2E17F0B4160032B93B /* mdAddProfViewController.m */,
 				9DFD7A2717F0A3AD0032B93B /* medDiary.sqlite */,
@@ -132,8 +156,6 @@
 				9DFD7A0C17F070A80032B93B /* mdProfileViewController.m */,
 				9DFD7A0517F033A10032B93B /* mdHomeViewController.h */,
 				9DFD7A0617F033A10032B93B /* mdHomeViewController.m */,
-				9DFD7A0317F032200032B93B /* appicon.png */,
-				9DFD7A0117F032180032B93B /* appicon114.png */,
 				9DFD79E117F0312F0032B93B /* mediDiary */,
 				9DFD79DA17F0312F0032B93B /* Frameworks */,
 				9DFD79D917F0312F0032B93B /* Products */,
@@ -255,14 +277,17 @@
 			files = (
 				9DFD79E617F0312F0032B93B /* InfoPlist.strings in Resources */,
 				9DFD79EE17F0312F0032B93B /* Default.png in Resources */,
+				7C5AFE631806527600A4B1D6 /* uncheck.png in Resources */,
 				9DFD79F017F0312F0032B93B /* Default@2x.png in Resources */,
+				7C5AFE611806527600A4B1D6 /* checked.png in Resources */,
+				7C5AFE621806527600A4B1D6 /* male.png in Resources */,
 				9DFD79F217F0312F0032B93B /* Default-568h@2x.png in Resources */,
 				9DFD79F517F0312F0032B93B /* MainStoryboard_iPhone.storyboard in Resources */,
 				9DFD79F817F0312F0032B93B /* MainStoryboard_iPad.storyboard in Resources */,
 				7C5AFE5C1806524E00A4B1D6 /* addProfile.png in Resources */,
 				9DFD7A0217F032180032B93B /* appicon114.png in Resources */,
 				9DFD7A0417F032200032B93B /* appicon.png in Resources */,
-				7C5AFE5D1806524E00A4B1D6 /* female22.png in Resources */,
+				7C5AFE5D1806524E00A4B1D6 /* female.png in Resources */,
 				9DFD7A0F17F08BC80032B93B /* dbquery.rtf in Resources */,
 				9DFD7A2817F0A3AD0032B93B /* medDiary.sqlite in Resources */,
 			);
@@ -276,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFD79E817F0312F0032B93B /* main.m in Sources */,
+				7CBA1CEF1A5437660097E9B7 /* visitHeaderView.m in Sources */,
 				9DFD79EC17F0312F0032B93B /* mdAppDelegate.m in Sources */,
 				9DFD7A0717F033A10032B93B /* mdHomeViewController.m in Sources */,
 				9DFD7A0D17F070A80032B93B /* mdProfileViewController.m in Sources */,
@@ -286,7 +312,7 @@
 				9DFD7A2117F093FB0032B93B /* FMDatabase.m in Sources */,
 				9DFD7A2617F093FB0032B93B /* FMResultSet.m in Sources */,
 				9DFD7A2F17F0B4160032B93B /* mdAddProfViewController.m in Sources */,
-				9D25DC4F17F4881E002ECD8A /* mdProfileInfoViewController.m in Sources */,
+				7CBA2B031A5B860F00A23F19 /* mdViewProfileInfoViewController.m in Sources */,
 				9D25DC5217F494A3002ECD8A /* mdVisitsViewController.m in Sources */,
 				9DF656B517F8A3EE007CBFC4 /* mdAddVisitsViewController.m in Sources */,
 			);
