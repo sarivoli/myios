@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"AddVisits View");
 	// Do any additional setup after loading the view.
 }
 
@@ -79,7 +80,7 @@
     [visitsInfo setObject:[txtHospitalName text]  forKey:@"hospital"];
     [visitsInfo setObject:[txtContactInfo text]  forKey:@"contactinfo"];
 
-    [visitsInfo setObject:[txtContactInfo text] forKey:@"reason"];
+    [visitsInfo setObject:[txtReason text] forKey:@"reason"];
     
     
     [md addVisits:visitsInfo];

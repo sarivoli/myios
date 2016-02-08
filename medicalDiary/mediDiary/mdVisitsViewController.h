@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "mdDiary.h"
 #import "mdVisitsInfoViewController.h"
+#import "mdViewProfileInfoViewController.h"
 
-@interface mdVisitsViewController : UITableViewController{
+@interface mdVisitsViewController : UITableViewController<fromProfileVisitViewDelegate>{
     NSMutableArray *profileVisits;
 }
 

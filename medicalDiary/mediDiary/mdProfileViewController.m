@@ -14,6 +14,7 @@
 
 @implementation mdProfileViewController
 @synthesize currentProfileId;
+@synthesize visitTableViewCtrl,profileInfoViewCtrl;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -42,8 +43,11 @@
     if([segue.identifier isEqualToString:@"profileInfo"])
         {
         NSLog(@"Profile Info");
-        mdProfileViewController *dest = [segue destinationViewController];
+        mdViewProfileInfoViewController *dest = [segue destinationViewController];
         dest.currentProfileId = self.currentProfileId;
+            self.profileInfoViewCtrl    = dest;
+           // self.profileInfoViewCtrl = dest;
+            //[dest.tableView setDelegate:self.visitViewCtrl];
         
         //UINavigationViewController *dest = (UINavigationViewController *)segue.destinationViewController;
         //self.detailViewController = dest.topViewController;
@@ -53,20 +57,20 @@
         {
         mdVisitsViewController *destv = [segue destinationViewController];
         destv.currentProfileId = self.currentProfileId;
+            //[self.profileInfoViewCtrl.tableView setDelegate:destv];
+            //UITableViewController *myNav = (UITableViewController *) segue.destinationViewController;
+            
+            //self.visitViewCtrl = myNav;
+            self.profileInfoViewCtrl.vvdelegate = destv;
 
         NSLog(@"Visits");
 
         }
-    else if([segue.identifier isEqualToString:@"addVisits"])
-        {
-        
-        mdAddVisitsViewController *destv = [segue destinationViewController];
-        destv.currentProfileId = self.currentProfileId;
-        NSLog(@"Add Visits");
-        
-        }
-
+   
 }
+
+
+
 
 
 

@@ -5,11 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>2FC5546B-F471-41C7-98C6-0CAB6D64F9F1</string>
+=======
+	<string>BA36BB7F-DD87-4A85-B6D7-16C5DD53CE43</string>
+>>>>>>> 45db3fa6a9855e374229f8aee154fbf28a61f428
 	<key>IDESourceControlProjectName</key>
 	<string>mediDiary</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>101BFA539B454FD067BF1D7C6D88E2F7D076BB7D</key>
 		<string>https://github.com/sarivoli/myios.git</string>
 	</dict>
@@ -26,13 +31,35 @@
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>101BFA539B454FD067BF1D7C6D88E2F7D076BB7D</string>
+=======
+		<key>7404D70A-C8A9-4F5E-B750-F91BE2896BCF</key>
+		<string>ssh://github.com/sarivoli/myios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>medicalDiary/mediDiary/mediDiary.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7404D70A-C8A9-4F5E-B750-F91BE2896BCF</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/sarivoli/myios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7404D70A-C8A9-4F5E-B750-F91BE2896BCF</string>
+>>>>>>> 45db3fa6a9855e374229f8aee154fbf28a61f428
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>101BFA539B454FD067BF1D7C6D88E2F7D076BB7D</string>
+=======
+			<string>7404D70A-C8A9-4F5E-B750-F91BE2896BCF</string>
+>>>>>>> 45db3fa6a9855e374229f8aee154fbf28a61f428
 			<key>IDESourceControlWCCName</key>
 			<string>myios</string>
 		</dict>

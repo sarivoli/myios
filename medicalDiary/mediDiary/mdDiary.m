@@ -152,6 +152,36 @@ static BOOL dbExists;
 
     
 }
+
+
+-(BOOL)delVisits:(id)visitId{
+    FMDatabase *db = [FMDatabase databaseWithPath:dataBasePath];
+    [db open];
+    [db executeUpdate: @"Update visits set active='N' where visitid=%@",visitId];
+    //NSLog(@"%@",userInfo);
+    
+//    FMResultSet *results = [db executeQuery:[NSString stringWithFormat: @"UPDATE visits set active='N' where visitid=%@",visitId]];
+  //  NSLog(@"REsult --> %@",results);
+    NSLog(@"Deleted visit info :%@",visitId);
+   //results=NULL;
+    [db close];
+    return true;
+
+}
+
+-(void)addMedications:(NSMutableDictionary*)medicationInfo{
+    FMDatabase *db = [FMDatabase databaseWithPath:dataBasePath];
+    
+    [db open];
+    [db executeUpdate: @"INSERT INTO perscription (profid,name,use,freq,food) values(?,?,?,?,?)",[medicationInfo objectForKey:@"profileid"],[medicationInfo objectForKey:@"name"],[medicationInfo objectForKey:@"use"],[medicationInfo objectForKey:@"freq"],[medicationInfo objectForKey:@"food"]];
+    //NSLog(@"%@",userInfo);
+    
+    NSLog(@"Medication Stored successfully");
+    
+    [db close];
+
+    
+}
 -(NSMutableArray*)getProfileVisits:(id)profileId{
     FMDatabase *db = [FMDatabase databaseWithPath:dataBasePath];
     NSMutableArray *profileVisits =[[NSMutableArray alloc]init];
@@ -202,9 +232,37 @@ static BOOL dbExists;
         [visitInfo setObject:[results stringForColumn:@"reason"] forKey:@"reason"];
         
     }
-    results=NULL;
+    NSLog(@"Visit Information:%@",visitInfo)
+    ;    results=NULL;
     [db close];
     return visitInfo;
 
 }
+-(NSMutableArray*)getMedicationList:(id)visitId{
+
+    NSMutableArray *medicationList=[[NSMutableArray alloc]init];
+    FMDatabase *db = [FMDatabase databaseWithPath:dataBasePath];
+    [db open];
+    
+    FMResultSet *results = [db executeQuery:[NSString stringWithFormat: @"select profid,name, use,freq,food from perscription where active='Y' and profid=%@",visitId]];
+    while ([results next]) {
+        NSMutableDictionary *medicationInfo = [[NSMutableDictionary alloc]init];
+
+        [medicationInfo setObject:[results stringForColumn:@"profid"] forKey:@"profid"];
+        [medicationInfo setObject:[results stringForColumn:@"name"] forKey:@"name"];
+        
+        [medicationInfo setObject:[results stringForColumn:@"use"] forKey:@"use"];
+        
+        [medicationInfo setObject:[results stringForColumn:@"freq"] forKey:@"freq"];
+        
+        [medicationInfo setObject:[results stringForColumn:@"food"] forKey:@"food"];
+        
+        [medicationList addObject:medicationInfo];
+    }
+    results=NULL;
+    [db close];
+    return medicationList;
+    
+}
+
 @end

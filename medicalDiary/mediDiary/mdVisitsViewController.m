@@ -29,7 +29,10 @@
     profileVisits = [[NSMutableArray alloc] init];
     [super viewDidLoad];
     NSLog(@"from Visits: %@",currentProfileId);
-
+    
+    
+    
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -51,9 +54,11 @@
     // Return the number of sections.
     return 1;
 }
+/*
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return @"Visits";
-}
+}*/
+
 /*
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -99,19 +104,24 @@
 }
 */
 
-/*
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        NSLog(@"Deleting the entry from row  %@",[profileVisits[indexPath.row] objectForKey:@"visitid"]);
+        mdDiary *mdbase=[[mdDiary alloc]init];
+        [mdbase delVisits: [profileVisits[indexPath.row] objectForKey:@"visitid"]];
+       // [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [self refreshVisitData];
+
+        
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-*/
 
 /*
 // Override to support rearranging the table view.
@@ -143,16 +153,14 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     
-    NSLog(@"View is reloading from profile view info");
-    mdDiary *mdbase=[[mdDiary alloc]init];
-    profileVisits = [mdbase getProfileVisits:currentProfileId];
-    if([profileVisits count]==0){
+    NSLog(@"View is reloading from profile view info++++");
+    [self refreshVisitData];
+        /*if([profileVisits count]==0){
         NSMutableDictionary *noResult=[[NSMutableDictionary alloc]init];
         [noResult setObject:@"No Visits Found" forKey:@"visitdate"];
         [noResult setObject:@"" forKey:@"hospital"];
         [profileVisits addObject:noResult];
-    }
-    [self.tableView reloadData];
+    }*/
 
     //NSString *gen,*starName, *rasiName, *defalt = [[NSString alloc]init];
     
@@ -171,7 +179,19 @@
     }
    
 }
-
+-(void)refreshVisitData{
+    mdDiary *mdbase=[[mdDiary alloc]init];
+    profileVisits = [mdbase getProfileVisits:currentProfileId];
+    [self.tableView reloadData];
+}
+-(void)doEdit{
+    NSLog(@"Yes coming for edit");
+    [self.tableView setEditing:true];
+}
+-(void)doDelete{
+    NSLog(@"Yes coming for delete");
+    
+}
 
 
 @end

@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "mdVisitsViewController.h"
-#import "mdProfileViewController.h"
-#import "mdAddVisitsViewController.h"
+#import "mdViewProfileInfoViewController.h"
 @interface mdProfileViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UIView *contProfinfo;
 @property (strong, nonatomic) IBOutlet UIView *contProfVisit;
 @property (strong, nonatomic)  id currentProfileId;
+@property (strong,nonatomic) UITableViewController *visitTableViewCtrl;
+@property (strong,nonatomic) mdViewProfileInfoViewController *profileInfoViewCtrl;
+
+
 
 
 

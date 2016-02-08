@@ -14,7 +14,11 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtUse;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segFood;
 @property (strong, nonatomic)  id visitId;
+@property (weak, nonatomic) IBOutlet UIButton *btnM;
+@property (weak, nonatomic) IBOutlet UIButton *btnA;
+@property (weak, nonatomic) IBOutlet UIButton *btnE;
+@property (weak, nonatomic) IBOutlet UIButton *btnN;
 
 -(IBAction)saveMedication;
-
+-(IBAction)btnClicked:(id)sender;
 @end

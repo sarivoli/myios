@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "mdDiary.h"
 #import "mdMedicationListController.h"
+#import "mdAddMedicationViewController.h"
 @interface mdVisitsInfoViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *lblDrName;
 @property (weak, nonatomic) IBOutlet UILabel *lblContactInfo;
-@property (weak, nonatomic) IBOutlet UITextView *tvReason;
 @property (weak, nonatomic) id visitId;
+@property (weak, nonatomic) IBOutlet UILabel *lblHospital;
+@property (weak, nonatomic) IBOutlet UILabel *lblReason;
 
 @end

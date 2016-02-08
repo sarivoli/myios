@@ -13,7 +13,7 @@
 @end
 
 @implementation mdAddMedicationViewController
-@synthesize txtName,txtUse,segFood,segFreq,visitId;
+@synthesize txtName,txtUse,segFood,visitId,btnA,btnE,btnM,btnN;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,6 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [btnM setImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateSelected];
+    [btnA setImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateSelected];
+     [btnE setImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateSelected];
+     [btnN setImage:[UIImage imageNamed:@"checked.png"] forState:UIControlStateSelected];
 	// Do any additional setup after loading the view.
 }
 
@@ -43,18 +47,23 @@
     
 
     [medicationInfo setObject: [txtUse text] forKey:@"use"];
+    NSString *freq =[[NSString alloc] init];
+ 
+    freq =[NSString stringWithFormat:@"%u,%u,%u,%u",[btnM state],[btnA state],[btnE state],[btnN state]];
+    NSLog(@"Selected Sate %@",freq);
+    [medicationInfo setObject:freq forKey:@"freq"];
+    [medicationInfo setObject:[NSString stringWithFormat:@"%i",[segFood selectedSegmentIndex]] forKey:@"food"];
     
-    //[medicationInfo setObject:[segFreq selectedSegmentIndex]  forKey:@"freq"];
-//   [medicationInfo setObject:[segFood selectedSegmentIndex]  forKey:@"food"];
     
-    
-    
- //   [md addMedication:medicationInfo];
+   [md addMedications:medicationInfo];
     [self.navigationController popViewControllerAnimated:YES];
     NSLog(@"Successfully Saved %@",medicationInfo);
     
 }
 
-
+-(IBAction)btnClicked:(UIButton*)sender{
+    sender.selected=!sender.selected;
+    
+}
 
 @end
