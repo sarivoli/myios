@@ -231,8 +231,8 @@
                         <viewControllerLayoutGuide type="top" id="Bqj-9W-c5m"/>
                         <viewControllerLayoutGuide type="bottom" id="f9D-OP-ick"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="eHW-Zn-YOj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="eHW-Zn-YOj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Profile Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wg2-N8-Gih">
@@ -247,29 +247,29 @@
                                 <rect key="frame" x="122" y="46" width="60" height="24"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.11107771843671799" green="0.036130715161561966" blue="0.025430832058191299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3K-0l-BM6">
                                 <rect key="frame" x="8" y="46" width="60" height="24"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.11107771843671799" green="0.036130715161561966" blue="0.025430832058191299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wp-qa-Ave">
                                 <rect key="frame" x="248" y="49" width="60" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.11107771843671799" green="0.036130715161561966" blue="0.025430832058191299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.86223870515823364" green="0.91733688116073608" blue="0.56390738487243652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="90"/>
+                    <size key="freeformSize" width="320" height="80"/>
                     <connections>
                         <outlet property="lblAge" destination="2wp-qa-Ave" id="hUk-Yt-wZF"/>
                         <outlet property="lblBgroup" destination="xmJ-To-Rrh" id="8Uo-6X-8aT"/>
@@ -279,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eBq-Uq-RYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336" y="90"/>
+            <point key="canvasLocation" x="1328" y="123"/>
         </scene>
         <!--Add Visits-->
         <scene sceneID="3Aj-wL-cbN">
@@ -761,17 +761,10 @@
                         <viewControllerLayoutGuide type="top" id="zXv-EN-XqK"/>
                         <viewControllerLayoutGuide type="bottom" id="0xY-qp-NUb"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="p6t-72-i8b">
+                    <view key="view" contentMode="center" id="p6t-72-i8b">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWK-WH-PPI">
-                                <rect key="frame" x="0.0" y="64" width="320" height="460"/>
-                                <animations/>
-                                <connections>
-                                    <segue destination="Kfz-MH-1KD" kind="embed" id="SSi-Ml-ANY"/>
-                                </connections>
-                            </containerView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yk1-jY-nnO">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <animations/>
@@ -836,9 +829,21 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" alpha="0.64999999999999969" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainBg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="DDB-AK-anT">
+                                <rect key="frame" x="0.0" y="64" width="329" height="460"/>
+                                <animations/>
+                            </imageView>
+                            <containerView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWK-WH-PPI">
+                                <rect key="frame" x="22" y="82" width="276" height="442"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="Kfz-MH-1KD" kind="embed" id="SSi-Ml-ANY"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Medi Diary" id="AVN-Ue-BFg"/>
                 </viewController>
@@ -849,7 +854,10 @@
         <!--Md Main Slide View Controller-->
         <scene sceneID="6pX-l4-mzW">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="partialCurl" modalPresentationStyle="currentContext" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Kfz-MH-1KD" customClass="mdMainSlideViewController" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" modalTransitionStyle="partialCurl" modalPresentationStyle="currentContext" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" doubleSided="YES" id="Kfz-MH-1KD" customClass="mdMainSlideViewController" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="250" height="400"/>
+                </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nSS-E2-IvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1015" y="-1192"/>
@@ -905,7 +913,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="App Informatino" id="OzI-yz-rRc">
+                            <tableViewSection headerTitle="App Information" id="OzI-yz-rRc">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="h28-9N-ywn">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -1050,6 +1058,7 @@
         <image name="addProfile.png" width="32" height="32"/>
         <image name="camera.png" width="239" height="208"/>
         <image name="female.png" width="22" height="22"/>
+        <image name="mainBg.jpg" width="1271" height="1920"/>
         <image name="male.png" width="22" height="22"/>
         <image name="profile.png" width="50" height="50"/>
         <image name="profile_filled.png" width="50" height="50"/>

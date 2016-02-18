@@ -18,6 +18,7 @@
 		7CBD91E817FB4C59009CA452 /* mdMedicationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBD91E717FB4C59009CA452 /* mdMedicationListController.m */; };
 		7CE8C672180502D000F9F5A0 /* mdAddMedicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CE8C671180502D000F9F5A0 /* mdAddMedicationViewController.m */; };
 		9D25DC5217F494A3002ECD8A /* mdVisitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D25DC5117F494A3002ECD8A /* mdVisitsViewController.m */; };
+		9D3662A01C75F5CE00089B60 /* mainBg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D36629F1C75F5CE00089B60 /* mainBg.jpg */; };
 		9D399A471AB58D29008AC59E /* mdMedicationListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D399A461AB58D29008AC59E /* mdMedicationListCell.m */; };
 		9D4336761C5671D300603F6D /* mdSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4336751C5671D300603F6D /* mdSettingsTableViewController.m */; };
 		9D94AC4D1ABC0F4900560DDB /* medicationPhoto.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D94AC4C1ABC0F4900560DDB /* medicationPhoto.png */; };
@@ -30,6 +31,7 @@
 		9DC95E461ACCE37500EF7183 /* mdMainSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC95E451ACCE37500EF7183 /* mdMainSlideViewController.m */; };
 		9DC95E4A1ACCE53A00EF7183 /* mdSummaryForNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC95E481ACCE53A00EF7183 /* mdSummaryForNowViewController.m */; };
 		9DC95E4B1ACCE53A00EF7183 /* mdSummaryForNowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC95E491ACCE53A00EF7183 /* mdSummaryForNowViewController.xib */; };
+		9DCA8F861C74AE3900ED7801 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCA8F851C74AE3900ED7801 /* QuartzCore.framework */; };
 		9DCE3EB61B1460B7009AFD09 /* profile_filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE3EB41B1460B7009AFD09 /* profile_filled.png */; };
 		9DCE3EB71B1460B7009AFD09 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE3EB51B1460B7009AFD09 /* profile.png */; };
 		9DCE3EC21B146168009AFD09 /* Bright Moon Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DCE3EB81B146168009AFD09 /* Bright Moon Filled-50.png */; };
@@ -93,6 +95,7 @@
 		7CE8C671180502D000F9F5A0 /* mdAddMedicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdAddMedicationViewController.m; sourceTree = "<group>"; };
 		9D25DC5017F494A3002ECD8A /* mdVisitsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdVisitsViewController.h; sourceTree = "<group>"; };
 		9D25DC5117F494A3002ECD8A /* mdVisitsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdVisitsViewController.m; sourceTree = "<group>"; };
+		9D36629F1C75F5CE00089B60 /* mainBg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mainBg.jpg; sourceTree = "<group>"; };
 		9D399A451AB58D29008AC59E /* mdMedicationListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdMedicationListCell.h; sourceTree = "<group>"; };
 		9D399A461AB58D29008AC59E /* mdMedicationListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdMedicationListCell.m; sourceTree = "<group>"; };
 		9D4336741C5671D300603F6D /* mdSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mdSettingsTableViewController.h; path = mediDiary.xcodeproj/../mdSettingsTableViewController.h; sourceTree = "<group>"; };
@@ -110,6 +113,7 @@
 		9DC95E471ACCE53A00EF7183 /* mdSummaryForNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mdSummaryForNowViewController.h; sourceTree = "<group>"; };
 		9DC95E481ACCE53A00EF7183 /* mdSummaryForNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mdSummaryForNowViewController.m; sourceTree = "<group>"; };
 		9DC95E491ACCE53A00EF7183 /* mdSummaryForNowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mdSummaryForNowViewController.xib; sourceTree = "<group>"; };
+		9DCA8F851C74AE3900ED7801 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9DCE3EB41B1460B7009AFD09 /* profile_filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_filled.png; sourceTree = "<group>"; };
 		9DCE3EB51B1460B7009AFD09 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		9DCE3EB81B146168009AFD09 /* Bright Moon Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bright Moon Filled-50.png"; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCA8F861C74AE3900ED7801 /* QuartzCore.framework in Frameworks */,
 				9DFD7A1417F093CA0032B93B /* libsqlite3.dylib in Frameworks */,
 				9DFD79DC17F0312F0032B93B /* UIKit.framework in Frameworks */,
 				9DFD79DE17F0312F0032B93B /* Foundation.framework in Frameworks */,
@@ -216,6 +221,7 @@
 				9DCE3ECD1B14620F009AFD09 /* Settings-50.png */,
 				9DCE3ECE1B14620F009AFD09 /* Treatment Plan Filled-50.png */,
 				9DCE3ECF1B14620F009AFD09 /* Treatment Plan-50.png */,
+				9D36629F1C75F5CE00089B60 /* mainBg.jpg */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -335,6 +341,7 @@
 		9DFD79DA17F0312F0032B93B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9DCA8F851C74AE3900ED7801 /* QuartzCore.framework */,
 				9DFD79DB17F0312F0032B93B /* UIKit.framework */,
 				9DFD79DD17F0312F0032B93B /* Foundation.framework */,
 				9DFD79DF17F0312F0032B93B /* CoreGraphics.framework */,
@@ -469,6 +476,7 @@
 				9DCE3ED81B146477009AFD09 /* UserFemaleCircleFilled.png in Resources */,
 				9DFD7A0217F032180032B93B /* appicon114.png in Resources */,
 				9DCE3EDB1B146477009AFD09 /* UserMaleCircle.png in Resources */,
+				9D3662A01C75F5CE00089B60 /* mainBg.jpg in Resources */,
 				9DFD7A0417F032200032B93B /* appicon.png in Resources */,
 				7C5AFE5D1806524E00A4B1D6 /* female.png in Resources */,
 				9DC95E4B1ACCE53A00EF7183 /* mdSummaryForNowViewController.xib in Resources */,
@@ -611,6 +619,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -626,6 +635,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

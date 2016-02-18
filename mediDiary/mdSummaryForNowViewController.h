@@ -24,6 +24,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *tblSummaryList;
 @property (nonatomic) NSString* currentProfileId;
 //@property (nonatomic) NSDictionary* currentMedicationList;
+//@property (strong, nonatomic) IBOutlet UIView *vBgView;
 -(IBAction)viewImage:(NSInteger)index;
 
 @end
